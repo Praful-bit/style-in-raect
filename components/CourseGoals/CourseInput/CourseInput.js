@@ -8,7 +8,9 @@ const CourseInput = props => {
 
   const goalInputChangeHandler = event => {
     setEnteredValue(event.target.value);
-    setIsValid(event.target.value.trim().length > 0); // Toggle validity based on input
+    setIsValid(event.target.value.trim().length > 0){
+      setIsValid(true)
+    }// Toggle validity based on input
   };
 
   const formSubmitHandler = event => {
